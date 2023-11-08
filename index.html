@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>IMSS</title>
+</head>
+<body>
+    <h1>Formulario IMSS</h1>
+    <form class="declara" id="contact_form" action="#">
+        <ul>
+            <li>
+                <span class="required notification">*Agregue sus datos</span>
+            </li>
+            <li>
+                <label for="derecho">N° Derecho habiente</label>
+                <input type="text" name="derecho" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="11 Caracteres" maxlength="11" required/>
+            </li>
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" pattern="[A-Za-z]+" required/>
+            </li>
+            <li>
+                <label for="primer_apellido">Primer Apellido</label>
+                <input type="text" name="primer_apellido" pattern="[A-Za-z]+" required/>
+            </li>
+            <li>
+                <label for="segundo_apellido">Segundo Apellido</label>
+                <input type="text" name="segundo_apellido" pattern="[A-Za-z]+" required/>
+            </li>
+            <li>
+                <label for="sangre">Tipo de sangre</label>
+                <select name="sangre" required>
+                    <option value="">Opci&oacute;n</option>
+                    <option value="a+">A+</option>
+                    <option value="o+">O+</option>
+                    <option value="b+">B+</option>
+                    <option value="ab+">AB+</option>
+                    <option value="a-">A-</option>
+                    <option value="o-">O-</option>
+                    <option value="b-">B-</option>
+                    <option value="ab-">AB-</option>
+                </select>
+            </li>
+            <li>
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" maxlength="2" required/>
+            </li>
+
+            <li>
+                <label for="especialidad">Especialidad:</label>
+                <input type="text" name="especialidad" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" maxlength="100" required/>
+            </li>
+
+            <p>Telefono:</p>
+            
+            <li>
+                <label for="lada">Lada</label>
+                <input type="text" name="lada" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="123" maxlength="3" required/>
+            </li>
+            <li>
+                <label for="numero">Numero</label>
+                <input type="text" name="numero" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z].{10,}" placeholder="1234567" maxlength="10" required/>
+            </li>
+
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+            
+        </ul>
+    </form>
+</body>
+</html>
